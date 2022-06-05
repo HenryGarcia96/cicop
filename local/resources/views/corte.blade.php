@@ -36,7 +36,7 @@
                 <a href="#!" id="btn-imprimir" class="btn btn-primary hidden" ><i class="fa fa-print"></i>&nbsp;Imprimir</a>
             </div>
             <input type="hidden" id="acciones" name="acciones"
-                value="{{ Session::get('menu')['CLIENTES-ED'] . '-' . Session::get('menu')['CLIENTES-EL'] }}" />
+                value="{{ Session::get('menu')['VER CLIENTES-ED'] . '-' . Session::get('menu')['VER CLIENTES-EL'] }}" />
             <div class="card">
                 <div class="card-body">
                     <div id="result" class="table-responsive">

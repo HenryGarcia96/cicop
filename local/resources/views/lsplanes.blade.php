@@ -30,7 +30,7 @@
         {{ Form::close() }}
         
       </div>
-      <input type="hidden" id="acciones" name="acciones" value="{{Session::get('menu')['CLIENTES-ED'].'-'.Session::get('menu')['CLIENTES-EL']}}" />
+      <input type="hidden" id="acciones" name="acciones" value="{{Session::get('menu')['VER CLIENTES-ED'].'-'.Session::get('menu')['VER CLIENTES-EL']}}" />
       @section ('htable_panel_title','Lista de planes')
       @section ('htable_panel_body')
 
@@ -67,12 +67,12 @@
             <td>{{$plan['no_quincenas']}}</td>
             <td>{{$plan['monto_total']}}</td>
             <td>
-            @if(Session::get('menu')['CLIENTES-ED']==1)
+            @if(Session::get('menu')['VER CLIENTES-ED']==1)
             <a href="#!" class="btn-editar btn btn-primary"><i class="fa fa-edit"></i></a>
             @endif
             </td>
             <td>
-            @if(Session::get('menu')['CLIENTES-EL']==1)
+            @if(Session::get('menu')['VER CLIENTES-EL']==1)
                     <a href="#!" class="btn-delete btn btn-danger"><i class="fa fa-trash-o"></i></a>
             @endif
             </td>
